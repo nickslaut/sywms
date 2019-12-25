@@ -1,0 +1,301 @@
+ALT+F1 选择当前文件或菜单中的任何视图工具栏
+Ctrl + Shift + A 是一个比较重要的快捷键，主要用于寻找PHPStorm IDE内所有的动作。
+data.match( /^\d+(\.\d+)?$/) 判断是不是一个非负的浮点数
+try {
+            var obj=JSON.parse(str);
+            if(typeof obj == 'object' && obj ){
+                return true;
+            }else{
+                return false;
+            }
+
+        } catch(e) {
+            
+        }
+     js判断字符串是否为JSON格式
+	 
+	 JSON.stringify(array)js传递数组
+str.trim()      jQuery.trim()函数用于去除字符串两端的空白字符。
+str.match(/\d+/g)取字符串中的数字
+isNaN(str)    js判断是否为数字
+array_sum(array_column($trades['list'],'payment')) 数组中相同列相加
+
+$("#keyword").keydown(function(event) {    阻止按回车提交
+        if (event.keyCode == 13) {
+            //执行操作
+            return false;
+        }
+    })
+
+分销跳转header('Location: '.url::action(url,[参数]));
+分销控制器加上header ( "cache-control: no-store, no-cache, must-revalidate" );可不必登录
+HTML <input> autofocus 属性
+
+<html>
+    <head>
+        <script type="text/javascript" src="mootools.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script>
+                jQuery.noConflict();  // 重点是这句。
+                //Jquery,关键就在于此，把$改成jQuery就行。
+                jQuery(document).ready(function(){
+                    jQuery("div").hide();
+                });
+
+                //Mootools
+                $("test").style.display = 'none';
+        </script>
+    </head>
+</html>
+
+<{$goods_spec|json_encode}>
+<{if $aSpec.spec|is_array}>
+<{assign var=aSpec value=$aSpec.spec}>
+
+要快速打开编辑器中的任何特定方法或字段，请按Ctrl+Alt+Shift+N(Navigate|Symbol)并开始键入其名称。
+从出现的下拉列表中选择符号。
+
+addslashes stripslashes 反斜杠
+
+$('#Country').comboSelect(); jQuery 下拉查询筛选插件
+
+可以通过使用快速定义（CTRL+Shift +I）快速查看在插入符号引用的图像。底层图像将在弹出窗口中打开，而不是单独的编辑器选项卡。
+
+str_append
+
+您可以提出整个项目中类、方法或变量的所有用法的列表，并快速跳转到所选的用法。为此，将插入符号置于符号名称或符号在代码中的用法，然后按Ctrl+Alt+F7（编辑|查找|在主菜单中显示用法），滚动列表并单击所需的用法。
+
+要快速找到菜单命令或工具栏操作，不需要查看菜单。只需按Ctrl + Shift + A（帮助查找主菜单上的动作），然后开始键入动作的名称。从建议列表中选择所需的动作。
+
+如果按下Ctrl+Shift+N，并只键入所包围的目录和文件名的几个字符，则可以直接跳转到任何深埋的文件：
+
+preventDefault方法就是可以阻止它的默认行为的发生而发生其他的事情。
+
+stopPropagation方法就是起到阻止js事件冒泡的作用
+
+$('license').show().adopt(img);
+
+JS获取对象键值对中key值的方法
+Object.keys( ) 会返回一个数组，数组中是这个对象的key值列表
+所以只要Object.keys(arr)[0]， 就可以得只包含一个键值对的key值
+
+implode("','",(array)$var)分解成'1','2'
+
+可以直接从HTML中重命名CSS选择器。将插入符号放置在选择器上以重命名并按Shift +F6（重构因子重命名）。
+
+$pObj->filter_use_like = true;ecos模糊查询
+
+delete obj.name js删除对象属性
+
+prepend jquery在被选元素内部插入
+
+#! /usr/local/php/bin -q
+<?php
+file_put_contents('1.txt','ddddddddddddddddddd',FILE_APPEND);计划任务
+
+location.replace(document.referrer);返回并刷新页面：document.referrer //前一个页面的URL
+
+解决PHPExcel?长数字串显示为科学计数 在数字字符串前加一个空格使之成为字符串
+
+var_dump(ctype_digit(23)); //bool(false) 
+var_dump(ctype_digit("23")); //bool(true) 
+var_dump(ctype_digit(23.5)); //bool(false) 
+var_dump(ctype_digit('23.5')); //bool(false) 
+var_dump(ctype_digit(NULL)); //bool(false) 
+var_dump(ctype_digit("")); //bool(false) 
+
+jQuery 遍历 - siblings() 方法
+
+数组转字符串
+var a, b;
+a = new Array(0,1,2,3,4);
+b = a.join("-");
+字符串转数组
+var s = "abc,abcd,aaa";
+ss = s.split(",");
+
+bbq:
+for(var j=0;j<a.length;j++){
+ ccc:
+ for(var i =0;i<a.length;i++){
+  if( i==5 ){
+   break bbq; //直接跳出bbq外层循环
+  }
+ }
+}
+
+var kvArray = [{key: 1, value: 10}, 
+               {key: 2, value: 20}, 
+               {key: 3, value: 30}];
+			   var reformattedArray2 = kvArray.map(function(obj,index) { 
+   obj.id=index;//添加id属性
+   return obj;//如果不返回则输出： Array [undefined, undefined, undefined]
+});
+console.log(reformattedArray2);
+> Array [Object { key: 1, value: 10, id: 0 }, Object { key: 2, value: 20, id: 1 }, Object { key: 3, value: 30, id: 2 }]
+
+js数组转对象
+
+var list = {};
+var arr = ["123","456","789"];
+for (var key in arr) {
+    list[key] = arr[key];
+}
+js数组转对象
+let arr = [{
+    name: 'dr',
+    ct: 'dr001'
+},
+{
+    name: 'ljy',
+    ct: 'ljy002'
+}]
+let obj = {}
+arr.forEach(item=> {
+    obj[item.name] = item.ct
+})
+清除浮动
+<style>
+                .clearfix:before,.clearfix:after {
+                    display: table;
+                    content: " "
+                }
+
+                .clearfix:after {
+                    clear: both
+                }
+            </style>
+			
+要在调试程序时轻松计算任何表达式的值，请在编辑器中选择其文本（您可以按几次ctrl+w以有效执行此操作），然后按alt+f8。
+
+使用ctrl+shift+i（查看快速定义）快速查看插入符号的定义或内容，而无需在新的编辑器选项卡中打开它。
+
+要查看方法的所有退出点，请将插入符号放在其中一个退出点上，例如RETURN语句，然后按CTRL+SHIFT+F7。
+
+ctrl+f12 搜索方法
+
+可以直接从HTML重命名CSS选择器。将插入符号放在要重命名的选择器上，然后按SHIFT+F6（重构重命名）。
+
+parse_str()
+
+printf()
+
+explode() 第三个参数
+
+strtr()第三个参数
+
+substr_count()
+
+str.replace(/\+/g, " ")jquery替换+为空格
+
+fix_theme_media  ecos修补模板媒体文件
+
+find / -name yahoo* -exec cat {} \;linux查找到文件后执行cat命令
+
+df -h 显示目前在Linux系统上的文件系统的磁盘使用情况统计。
+
+lsof 显示目前在Linux系统上有哪些程序在访问这个文件
+
+ORDER BY CONVERT(CnName USING gbk) mysql按拼音排序
+
+$(":checkbox").not(':disabled') 不是disabled的checkbox
+
+/etc/fstab 自动挂载配置文件
+
+mount -a 挂载/etc/fstab,可以起到检测作用
+
+mount -n -o remount,rw /  如果提示root只读,可以进单用户模式,重新挂载根分区加写权限
+
+正则表达式的格式可能相当复杂。要确保没有遗漏引号的斜线，请将插入符号放在要检查的表达式中的某个位置，然后按Alt+Enter。
+
+在弹出框中，键入一个您认为应该与正则表达式匹配的字符串。如果背景变成绿色，你就幸运了。如果它变红了，你就得找个错误。
+
+vi 输入:sh
+
+html局部刷新
+setTimeout(function () {
+            $("#autore").load(location.href + " #autore");//注意后面DIV的ID前面的空格，很重要！没有空格的话，会出双眼皮！（也可以使用类名）
+        });//8秒自动刷新  
+		
+
+ajax上传文件		
+<form id= "uploadForm">  
+      <p >指定文件名： <input type="text" name="filename" value= ""/></p >  
+      <p >上传文件： <input type="file" name="file"/></ p>  
+      <input type="button" value="上传" onclick="doUpload()" />  
+</form> 
+function doUpload() {  
+     var formData = new FormData($( "#uploadForm" )[0]);  
+     $.ajax({  
+          url: 'http://localhost:8080/cfJAX_RS/rest/file/upload' ,  
+          type: 'POST',   
+          data: formData,  
+          async: false,  
+          cache: false,  
+          contentType: false,  
+          processData: false,  
+          success: function (returndata) {  
+              alert(returndata);  
+          },  
+          error: function (returndata) {  
+              alert(returndata);  
+          }  
+     });  
+}  
+
+str_word_count()返回字符串中的单词
+
+SELECT * FROM sdb_WMS_packet_items WHERE prior>sdb_WMS_packet_items.nums
+
+按ctrl+shift+f8显示所有现有断点
+
+parse_url() parse_str() http_build_query()
+
+ord($char)>0xa0 判断字符是否为汉字
+
+clearstatcache() 清除php缓存
+
+草稿文件允许您在编辑器中进行实验和原型，而无需创建任何项目文件。
+
+要创建草稿文件，请按ctrl+alt+shift+insert，然后选择其语言
+
+is_uploaded_file()  move_uploaded_file()
+
+header("Content-type:application/octet-stream")
+
+eval()把字符串按照代码来运行
+PHP 版本：	5.5+
+<?php
+// 可能从数据库中返回数组
+$a = array(
+  array(
+    'id' => 5698,
+    'first_name' => 'Peter',
+    'last_name' => 'Griffin',
+  ),
+  array(
+    'id' => 4767,
+    'first_name' => 'Ben',
+    'last_name' => 'Smith',
+  ),
+  array(
+    'id' => 3809,
+    'first_name' => 'Joe',
+    'last_name' => 'Doe',
+  )
+);
+
+$last_names = array_column($a, 'last_name', 'id');
+print_r($last_names);
+?>
+Array
+(
+  [5698] => Griffin
+  [4767] => Smith
+  [3809] => Doe
+)
+
+js弹出浏览器窗口，并指定浏览器弹出大小
+window.open('http://www.baidu.com','_blank','width=300,height=200,menubar=no,toolbar=no,status=no,scrollbars=yes')
+
+https://s3.amazonaws.com/uifaces/faces/twitter/abdulhyeuk/128.jpg
